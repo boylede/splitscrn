@@ -1,0 +1,21 @@
+[package]
+name = "belfry_splitscreen_test"
+authors = ["Dan Boyle <boylede@gmail.com>"]
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+bevy = "0.8" 
+bevy_mod_picking = {path = "../vendored/bevy_mod_picking"}
+
+bevy_mod_raycast = {path = "../vendored/bevy_mod_raycast"}
+bevy_console = {git = "https://github.com/hankjordan/bevy-console"}
+bevy-inspector-egui = "0.12.1"
+
+[profile.release]
+opt-level = 3
+strip = "symbols"
+lto = "fat"
+panic = "abort"
+codegen-units = 1
