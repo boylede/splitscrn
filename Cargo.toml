@@ -7,10 +7,8 @@ edition = "2021"
 [dependencies]
 
 bevy = "0.8" 
-bevy_mod_picking = {path = "../vendored/bevy_mod_picking"}
-
-bevy_mod_raycast = {path = "../vendored/bevy_mod_raycast"}
-bevy_console = {git = "https://github.com/hankjordan/bevy-console"}
+bevy_mod_picking = {git = "https://github.com/boylede/bevy_mod_picking"}
+bevy_mod_raycast = {git = "https://github.com/boylede/bevy_mod_raycast"}
 bevy-inspector-egui = "0.12.1"
 
 [profile.release]
